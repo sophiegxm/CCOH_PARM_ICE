@@ -1144,11 +1144,13 @@
        set PARMEST_R1-PARMEST_R&reps;
     run;
 	proc means data=_PARMEST_BS noprint;
-		class parameter;
+		class parameter / order=data;
 		types parameter;
 		var estimate;
 		output out=stat_bydata std=SE ;
 	run;
+	/*Retain order of parameters*/
+	data stat_bydata;set stat_bydata;parmorder = _N_;run;
 
 	/*construct new 95% with SE from bootstrapping*/
 	%sortby(&SAVELIB..PARMEST_R0, parameter);
@@ -1157,17 +1159,19 @@
 		merge &SAVELIB..PARMEST_R0 stat_bydata;
 		by parameter;
 
-		Low95CI = ROUND(estimate-1.96*SE,0.0001);
-		High95CI  = ROUND(estimate+1.96*SE,0.0001);
+		if PARAMETER^='Shape (Kappa)' then do;
+			Low95CI = ROUND(estimate-1.96*SE,0.0001);
+			High95CI  = ROUND(estimate+1.96*SE,0.0001);
 
-		array stat estimate Low95CI High95CI;
-		array expv relrisk exp_Low95CI exp_High95CI;
-		do over expv;
-			expv = exp(stat);
+			array stat estimate Low95CI High95CI;
+			array expv exp_est exp_Low95CI exp_High95CI;
+			do over expv;
+				expv = exp(stat);
+			end;
 		end;
+
 	run;
-
-
+	%sortby(_PARMEST, parmorder);
 
 	data ds_out;
 		set _LRT _PARMEST;
