@@ -1,13 +1,13 @@
 *----------------------------------------------------------------------------------------------------------*;
 * SAS Program    : example_CCOH_PARM_ICE.SAS                                                               *;
 * Author         : Xiaoming Gao                                                        					   *;
-* Abstract		 : This is an example of using the SAS macro ccoh_parm_ice_v4.SAS                      	   *;
+* Abstract		 : This is an example of using the SAS macro ccoh_parm_ice.SAS                      	   *;
 *                                                                                                          *;
-* Reference      : 1) Gao X., Hudgens M., and Zou, F. (2022+), Case-cohort interval-censored data with     *;
-*				   time-dependent covariates.  														   	   *;
-*                  2) Sparling YH, Younes N, Lachin JM, Bautista OM. Parametric survival models for   	   *;
-*                  interval censored data with time-dependent covariates.                                  *;
-*                  Biostatistics (2006) 7(4):599-614.                                                      *;
+* Reference      : 1) Gao X., Hudgens M., and Zou, F. (2022). Case-cohort studies with time-dependent      *;
+*				   covariates and interval-censored outcome. Emerging Topics in Modeling Interval-Censored *;
+*				   Survival Data (Editors J. Sun and D.G. Chen), ICSA Book Series in Statistics.  		   *;
+*                  2) Sparling YH, Younes N, Lachin JM, Bautista OM. (2006). Parametric survival models for*;
+*                  interval censored data with time-dependent covariates. Biostatistics 7(4):599-614.      *;
 *                                                                                                          *;
 *                                                                                                          *;
 * Date of Most Recent Revision : 04-Mar-2022                                                			   *;
@@ -24,9 +24,9 @@ data ds;
   set loc.exampledata;
 run;
 /*Windows*/
-filename ccoh "&macpath\ccoh_parm_ice_v4.SAS";
+filename ccoh "&macpath\ccoh_parm_ice.SAS";
 /*Linux*/
-/*filename ccoh "&macpath/ccoh_parm_ice_v4.SAS";*/
+/*filename ccoh "&macpath/ccoh_parm_ice.SAS";*/
 %include ccoh;
 
 Title "Simulated Data";

@@ -3,12 +3,11 @@
 * Function       : Fits an accelerated failure time model with time dependent covariates in a case-cohort  *;
 *					design. 																			   *;
 *                                                                                                          *;
-* Reference      : 1) Gao X., Hudgens M., and Zou, F. (2022), Case-cohort studies with time-dependent      *;
+* Reference      : 1) Gao X., Hudgens M., and Zou, F. (2022). Case-cohort studies with time-dependent      *;
 *				    covariates and interval-censored outcome. Emerging Topics in Modeling Interval-Censored*;
-*					Survival Data (Editors J. Sun and D.G. Chen), ICSA Book Series in Statistics.  		   *;								   	   *;
-*                  2) Sparling YH, Younes N, Lachin JM, Bautista OM. Parametric survival models for   	   *;
-*                  interval censored data with time-dependent covariates.                                  *;
-*                  Biostatistics (2006) 7(4):599-614.                                                      *;
+*					Survival Data (Editors J. Sun and D.G. Chen), ICSA Book Series in Statistics.  		   *;
+*                  2) Sparling YH, Younes N, Lachin JM, Bautista OM. (2006). Parametric survival models for*;
+*                  interval censored data with time-dependent covariates. Biostatistics 7(4):599-614.      *;
 *                                                                                                          *;
 * Author         : Xiaoming Gao                                                        					   *;
 * Date Completed : 19-Feb-2022 (Version 1.0)                                                               *;
