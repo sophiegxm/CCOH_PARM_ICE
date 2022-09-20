@@ -1,10 +1,11 @@
 *----------------------------------------------------------------------------------------------------------*;
-* SAS Program    : ccoh_parm_ice.SAS (Version 1.0)                                                              *;
+* SAS Program    : ccoh_parm_ice.SAS (Version 1.0)                                                         *;
 * Function       : Fits an accelerated failure time model with time dependent covariates in a case-cohort  *;
 *					design. 																			   *;
 *                                                                                                          *;
-* Reference      : 1) Gao X., Hudgens M., and Zou, F. (2022+), Case-cohort interval-censored data with     *;
-*				   time-dependent covariates.  														   	   *;
+* Reference      : 1) Gao X., Hudgens M., and Zou, F. (2022), Case-cohort interval-censored data with      *;
+*				   time-dependent covariates. Emerging Topics in Modeling Interval-Censored Survival Data  *;
+*					(Editors J. Sun and D.G. Chen), ICSA Book Series in Statistics.  					   *;								   	   *;
 *                  2) Sparling YH, Younes N, Lachin JM, Bautista OM. Parametric survival models for   	   *;
 *                  interval censored data with time-dependent covariates.                                  *;
 *                  Biostatistics (2006) 7(4):599-614.                                                      *;
@@ -12,8 +13,8 @@
 * Author         : Xiaoming Gao                                                        					   *;
 * Date Completed : 19-Feb-2022 (Version 1.0)                                                               *;
 *                                                                                                          *;
-* This SAS macro is built on parm_ice_version_3_2_exp2_SE_h.SAS                       *;
-* Date of Most Recent Revision : 19-Feb-2022 (Version 1.0)                                               *;
+* This SAS macro is built on parm_ice_version_3_2.SAS								                       *;
+* Date of Most Recent Revision : 19-Feb-2022 (Version 1.0)                                                 *;
 *                                                                                                          *;
 * SAS Version    : This macro was developed using SAS version 9.4.                                         *;
 * Printer Setup  : Font=SAS monospace 8pt ls=112 ps=60                                                     *;
