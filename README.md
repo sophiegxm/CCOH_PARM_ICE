@@ -14,5 +14,5 @@ Please check example_CCOH_PARM_ICE.SAS.
 Gao X., Hudgens M., and Zou, F. (2022), Case-cohort interval-censored data with time-dependent covariates.
 *Emerging Topics in Modeling Interval-Censored Survival Data* (Editors J. Sun and D.G. Chen), ICSA Book Series in Statistics.
 
-Sparling YH, Younes N, Lachin JM, and Bautista OM. Parametric survival models for interval-censored data with time-dependent covariates. Biostatistics;7, 599-614, 2006.
+Sparling YH, Younes N, Lachin JM, and Bautista OM. Parametric survival models for interval-censored data with time-dependent covariates. *Biostatistics*, Volume 7, Issue 4, 2006, Pages 599–614, https://doi.org/10.1093/biostatistics/kxj028
  
